@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/baloo_da</item>
+        <item>@font/bangers</item>
+        <item>@font/bowlby_one_sc</item>
+        <item>@font/cantarell</item>
+        <item>@font/frijole</item>
+        <item>@font/monofett</item>
+        <item>@font/montserrat_alternates</item>
+        <item>@font/montserrat_subrayada</item>
+    </array>
+</resources>

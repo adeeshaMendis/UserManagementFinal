@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimage"
+    tools:context=".UserProfile">
+
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="329dp"
+        android:layout_height="42dp"
+        android:fontFamily="@font/frijole"
+        android:gravity="center"
+        android:textColor="#3E1860"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/topbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/buttonResetPW"
+        android:layout_width="114dp"
+        android:layout_height="42dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/monofett"
+        android:onClick="resetPassword"
+        android:text="Reset password"
+        android:textColor="#A124AF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:background="@drawable/border"
+        android:layout_marginLeft="4dp"
+        android:fontFamily="@font/monofett"
+        android:onClick="updateUser"
+        android:text="Update"
+        android:textColor="#A124AF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/monofett"
+        android:onClick="deleteUser"
+        android:text="Delete"
+        android:textColor="#A124AF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.819"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <Button
+        android:id="@+id/buttonView"
+        android:layout_width="277dp"
+        android:layout_height="44dp"
+        android:background="@drawable/border"
+        android:fontFamily="@font/monofett"
+        android:onClick="viewUsers"
+        android:text="View all users"
+        android:textColor="#A124AF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_alternates"
+        android:gravity="center_horizontal"
+        android:text="Fullname"
+        android:textColor="#2A0A2E"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_alternates"
+        android:gravity="center_horizontal"
+        android:text="Phone"
+        android:textAlignment="center"
+        android:textColor="#2A0A2E"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
+
+    <EditText
+        android:id="@+id/editTextPersonName"
+        android:layout_width="184dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:fontFamily="@font/cantarell"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.453" />
+
+    <EditText
+        android:id="@+id/editTextPersonUserName"
+        android:layout_width="184dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:fontFamily="@font/cantarell"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="156dp"
+        android:layout_height="37dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_alternates"
+        android:gravity="center_horizontal"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="#2A0A2E"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="184dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:fontFamily="@font/cantarell"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.645" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="98dp"
+        android:layout_height="38dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/montserrat_alternates"
+        android:gravity="center_horizontal"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textColor="#2A0A2E"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639" />
+
+    <EditText
+        android:id="@+id/editTextPersonPhone"
+        android:layout_width="184dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:fontFamily="@font/cantarell"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744" />
+
+    <ImageView
+        android:id="@+id/profPic"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:maxHeight="300dp"
+        android:maxWidth="300dp"
+        android:padding="3dp"
+        android:background="@drawable/border"
+        android:onClick="changeProfilePic"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBackButton"
+        android:layout_width="36dp"
+        android:layout_height="34dp"
+        android:background="@drawable/border"
+        android:onClick="signOut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/abc_vector_test" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

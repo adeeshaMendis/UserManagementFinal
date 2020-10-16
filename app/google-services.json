@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "196997430205",
+    "firebase_url": "https://user-management-cd1ca.firebaseio.com",
+    "project_id": "user-management-cd1ca",
+    "storage_bucket": "user-management-cd1ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196997430205:android:2ee93d5a14a58567fff0d4",
+        "android_client_info": {
+          "package_name": "com.example.usermanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "196997430205-q1ltjo3d58grao531cisnr328gks44lv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ-ReojqEOvqwLTBiD9lBUfxfGZ29q8mA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "196997430205-q1ltjo3d58grao531cisnr328gks44lv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
